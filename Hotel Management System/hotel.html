@@ -1,0 +1,326 @@
+<!doctype html>
+<html>
+<title>The Panache </title>
+<head>
+
+    <link rel="stylesheet" href="tut.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<header id="home">
+	<div class = "fixed-header">
+	<nav id="nav-wrap" class = "container" ><ul id="nav" class="nav" style="background: pink;"><font color = "red">
+<script> 
+  // Use of function Date.now() 
+  var today = new Date();
+var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+var dateTime = date+'   '+time;
+  // Printing the current date                     
+  if(today.getHours()<12 && today.getHours()>=4)
+   document.write( 'Good Morning!  ' )
+   else if(today.getHours()<17 && today.getHours()>=12)
+   document.write( 'Good Afternoon!  ' )
+   else if(today.getHours()<19 && today.getHours()>=17)
+   document.write( 'Good Evening!   ' )
+   else
+   document.write( 'Hello!   ' )
+    document.write( 'Last refreshed - ' + dateTime + '  ' )
+  
+</script></font>
+<br><br>
+            
+                <li>
+                    <a href="signup.html">Sign up</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+				
+            </ul>
+			
+			
+        </nav>
+        <nav id="nav-wrap" >
+	
+            <ul id="nav" class="nav" style="background: black;">
+                <li>
+                    <a href="overview.html">Overview</a>
+                </li>
+                <li>
+                    <a href="loc.html">Iconic Location</a>
+                </li>
+                <li>
+                    <a href="spa.html">Spa & Fitness</a>
+                </li>
+                <li>
+                    <a href="rooms.html">Rooms</a>
+                </li> 
+				<li>
+					<a href = "gallery.html"> Gallery </a>
+            </ul>
+        </nav></div>
+		
+</head>
+
+<body onload = "alertUser('Welcome to the Panache - Luxury Hotel Page')">
+<br><br><br><br><br><br><br>
+<br><br><br>
+		<img src = "pq.jpg" alt="Me" style="float:left;" width="200" height="195">
+		<img src = "yy.jpg" alt="Me" style="float:right;" width="220" height="195">
+        <div class="row banner">
+            <div class="banner-text">
+                <br><h1>The Panache</h1>
+                <h3><font color="blue"><br>
+                    "In the heart of New Delhi" <br><br><font color="purple">
+					<!--<picture class="l-picture-wrapper  aspect-ratio-16by9  l-row l-display-block l-padding-none l-width-max l-pos-rel l-overflow-hidden"> <source srcset="https://cache.marriott.com/marriottassets/marriott/GVALC/gvalc-poolgarden-terrace-6921-hor-wide.jpg?interpolation=progressive-bilinear&amp;downsize=1440px:*, https://cache.marriott.com/marriottassets/marriott/GVALC/gvalc-poolgarden-terrace-6921-hor-wide.jpg?interpolation=progressive-bilinear&amp;downsize=2880px:* 2x" media="(min-width: 1025px)"> <source srcset="https://cache.marriott.com/marriottassets/marriott/GVALC/gvalc-poolgarden-terrace-6921-hor-wide.jpg?interpolation=progressive-bilinear&amp;downsize=1024px:*, https://cache.marriott.com/marriottassets/marriott/GVALC/gvalc-poolgarden-terrace-6921-hor-wide.jpg?interpolation=progressive-bilinear&amp;downsize=2048px:* 2x" media="(min-width: 200px)"> <source srcset="https://cache.marriott.com/marriottassets/marriott/GVALC/gvalc-poolgarden-terrace-6921-hor-wide.jpg?interpolation=progressive-bilinear&amp;downsize=768px:*, https://cache.marriott.com/marriottassets/marriott/GVALC/gvalc-poolgarden-terrace-6921-hor-wide.jpg?interpolation=progressive-bilinear&amp;downsize=1536px:* 2x" media="(min-width: 401px)"> <source srcset="https://cache.marriott.com/marriottassets/marriott/GVALC/gvalc-poolgarden-terrace-6921-hor-wide.jpg?interpolation=progressive-bilinear&amp;downsize=600px:*, https://cache.marriott.com/marriottassets/marriott/GVALC/gvalc-poolgarden-terrace-6921-hor-wide.jpg?interpolation=progressive-bilinear&amp;downsize=1198px:* 2x"> <img src="https://cache.marriott.com/marriottassets/marriott/GVALC/gvalc-poolgarden-terrace-6921-hor-wide.jpg?interpolation=progressive-bilinear&amp;downsize=1440px:*" alt="PoolGarden Terrace" itemprop="url"> </picture>-->
+					<br>
+					<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+  
+    <img src="img1.jpg" style="width:100%" height="600" >
+  
+  </div>
+
+  <div class="mySlides fade">
+
+    <img src="img2.jpg" style="width:100%">
+ 
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="img3.jpg" style="width:100%" >
+  
+  </div>
+  <div class="mySlides fade">
+  
+    <img src="img4.jpg" style="width:100%" height="600">
+ 
+  </div>
+  <div class="mySlides fade">
+  
+    <img src="img5.jpg" style="width:100%" height="600">
+ 
+  </div>
+
+  <!-- Next and previous buttons -->
+  
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  
+<script type="text/Javascript" >
+
+  var slideIndex = 0;
+showSlides();
+function alertUser(msg) {
+alert(msg);
+}
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 5000);
+}
+function myFunctions() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+function myFunctionss() {
+  var dots = document.getElementById("dot");
+  var moreText = document.getElementById("moree");
+  var btnText = document.getElementById("myBt");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</div>
+				   <br> <form ><fieldset>
+				    <h2> <u>Make a reservation </u></h2>
+<br>
+Check in date <input type = "date"><br>
+Check out data <input type = "date"><br>
+Room type <select>
+<option> Single (1 Adult) </option>
+<option> Deluxe Double (2 Adult / 1 children) </option>
+<option> Luxury Suite (4 Adult) </option>
+</select>
+No. of rooms 
+1 <input type = "radio" name = "1" value = "1">
+2 <input type = "radio" name = "1" value = "2">
+3 <input type = "radio" name = "1" value = "3">
+4 <input type = "radio" name = "1" value = "4">
+other <input type = "radio" name = "1" value = "other">
+<br><input type = "button" value = "Reserve Now"> 
+</fieldset>
+</form>   				   
+ </div>
+ <br><br><br><fieldset>
+	<font color="blue"><pre><legend><h2><u>Experience New Delhi's Iconic Luxury Hotel on Central Park South</u></h2></legend><i><b><h3>
+Since its debut on October 1, 1907, The Panache Hotel has remained a New Delhi icon hosting world leaders, dignitaries,<br> captains of industry, Broadway legends, and Hollywood royalty.<br> As an established staple for lavish society affairs and blockbuster films, The Panache has welcomed guests <br>from around the world to enjoy its magic at the castle on Central Park South for more than 100 years. Ideally situated on Fifth Avenue, <br>The Panache’s prestigious address continues to define elegance with <br>unmatched service and an ever-evolving modern sensibility.
+<br><button onclick="myFunctions()" id="myBtn">Read more</button> <span id="dots">...</span><span id="more">
+From feast to fete, The Panache’s extraordinary portfolio of refined<br> experiences is enjoyed by all who pass through the iconic revolving door. <br>Revel in the magic of Afternoon Tea in The Palm Court, savor the sites in the elegant Champagne Bar, transport in time through the magic of The Rose Club, <br>and embark on a culinary journey throughout The Panache Food Hall.
+
+Offering 282 distinctive guestrooms including 102 luxurious suites,<br> The Panache continues to strike the balance between its storied past and limitless future with the launch of the Legacy Suite collection.<br> Classic crown molding is juxtaposed against contemporary works of art and lavish fabrics, adding <br>vibrant textural elements to The Panache’s guestrooms complete with dramatic lighting and beautifully finished woodwork to amplify the impeccable motif.
+
+Unrivaled luxury and comfort are complemented<br> by attentive and discreet service throughout all areas of the hotel.<br> In addition to the vast culinary offerings, and luxurious guestrooms, The Panache offers world-class Shops at <br>The Panache, as well as health & wellness facilities including Guerlain Spa, <br>The Panache Hotel Fitness Center and Warren-Tricomi Salon.
+
+The opulent Grand Ballroom and Terrace Room<br> have been meticulously restored to their original grandeur continuing to host many of<br> New York City’s most memorable moments, which are at the heart of The Panache’s legacy.			   
+     
+   </h3> </i> </b>  </font></fieldset></pre>
+		
+    <br><br><br><br><br><br>
+<div>
+		<img src = "qq.jpg" alt="Me" >
+		<img src = "www.jpg" alt="Me" >
+		<img src = "lll.jpg" alt="Me" >
+</div>	
+<div>
+<br><br><br><br>
+<fieldset>
+<h2><u>Upcoming Events at The Plaza</u></h2><br>
+<font color="green"><b>Friday, August 30th - Friday, September 6th, 2019<br><br>
+<pre>Friday, August 30th 2019
+Rawther Fancy Tea Party
+Eloise Tea Room | 4-5p
+
+Saturday, August 31st 2019
+Weekend Brunch
+Todd English at The Plaza | 11:30a-3p
+
+Sunday, September 1st 2019
+Weekend Brunch
+Todd English at The Plaza | 11:30a-3p
+
+Monday, September 2nd 2019
+Happy Hour
+Todd English at The Plaza | 4p – 7p
+
+Tuesday, September 3rd 2019
+Happy Hour
+Todd English at The Plaza | 4p – 7p
+
+Wednesday, September 4th 2019
+Live Jazz Music by Kat Gang Jazz
+The Rose Club | 9pm
+<br><button onclick="myFunctionss()" id="myBt">Read more</button> <span id="dot">...</span><span id="moree">
+Thursday, September 5th 2019
+Rawther Fancy Tea Party
+Eloise Tea Room | 4-5p
+
+Happy Hour
+Todd English at The Plaza | 4p – 7p
+
+Friday, September 6th 2019
+Rawther Fancy Tea Party
+Eloise Tea Room | 4-5p
+
+Happy Hour
+Todd English at The Plaza | 4p – 7p
+
+Additional Notes
+Afternoon Tea and Twilight Tea Available Daily
+The Palm Court | 
+
+Additional Notes
+Host a Rawther Eloise-themed birthday at The Plaza!
+Eloise Tea Room |<br></b></pre>
+</font>
+</fieldset>
+</div>
+<br><br><br>
+    <footer style="background-color: pink;">
+		<img src = "pq.jpg" alt="Me" style="float:left;" width="230" height="240">
+	<font color = "black" > <h2><u>Contact </u></h2><h3> <br>
+	The Panache , Connaught Place , New Delhi<br> 9958134394 or 888-850-0909<br> <a href = "mailto: thepanache@hotelp.com">thepanache@hotelp.com</a></font></h3>
+	<ul class="social">
+                    <li>
+                        <a href="https://www.facebook.com/anupriya.verma.520" target="_blank">
+                            <i class="fab fa-facebook-f fa-5x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/anupriyaverma13" target="_blank">
+                            <i class="fab fa-twitter fa-5x"></i>
+                        </a>
+                    </li>
+					<li>
+                        <a href="https://www.instagram.com/anu.p.riya/" target="_blank">
+                            <i class="fab fa-instagram fa-5x"></i>
+                        </a>
+                    </li>
+                  
+                </ul>
+        <div class="row">
+            <div class="twelve columns"><font color="brown"><form>Keep in touch -- <input type = "email" placeholder="Enter your email">
+                <font color="red">Thankyou :) Send anomously your views -- 
+				<input type="text" placeholder="Enter your views" name="text" required> <button type="submit" class="signupbtn">Send</button></form><br><br>
+				</div>
+				<font color="black">T© 2019 Panache LLC (INDIA) — All Rights Reserved — Privacy Policy
+            <div id="go-top">
+                <a class="smoothscroll" title="Back to Top" href="#home">
+                    Back to Top <i class="fas fa-chevron-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+<script type="text/Javascript" >
+    
+document.addEventListener('keydown', do_something(this));
+
+function do_something(e){
+    console.log('event click captures!');
+}
+</script>
+
+
+</body>
+</html>
